@@ -1,4 +1,4 @@
-" File: lnt.vim
+" File: syntax/lnt.vim
 " Author: Peter Wolf <pwolf2310@gmail.com>
 " Description: Vim syntax file for PC-lint Plus's lnt files
 " Last Modified: November 04, 2025
@@ -25,5 +25,14 @@ hi def link lntVariable Identifier
 hi def link lntOption Special
 hi def link lntKeyword Keyword
 hi def link lntMetricTarget Structure
+
+" Support for NERD commenter plugin
+if exists('loaded_nerd_comments')
+  if !exists('g:NERDCustomDelimiters')
+      let g:NERDCustomDelimiters = {}
+  endif
+  "  add delimiters for comments
+  let g:NERDCustomDelimiters['lnt'] = { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' }
+endif
 
 let b:current_syntax = 'lnt'
