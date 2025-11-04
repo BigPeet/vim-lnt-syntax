@@ -1,0 +1,26 @@
+*vim-lnt-syntax.txt* Syntax plugin for PC-lint Plus lnt files *vim-lnt-syntax*
+
+Author: Peter Wolf <pwolf2310@gmail.com>
+
+
+==============================================================================
+CONTENT                                                                  *lnt*
+
+  1. Introduction                                          |lnt-introduction|
+  2. Features                                              |lnt-features|
+
+
+==============================================================================
+INTRODUCTION                                                *lnt-introduction*
+
+vim-lnt-syntax is a syntax plugin which matches provides simple syntax
+highlighting for PC-lint Plus configuration files (lnt).
+
+==============================================================================
+FEATURES                                                        *lnt-features*
+
+- Detect ".lnt" as PC-lint Plus configuration files.
+- Apply basic syntax highlighting to those lnt files.
+
+
+vim:tw=78:ft=help
