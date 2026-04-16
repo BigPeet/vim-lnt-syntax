@@ -16,7 +16,7 @@ unlet b:current_syntax
 syn region lntString start=+'+ skip=+\\\\\|\\'+ end=+'+ keepend contains=@Spell
 syn match lntVariable "\$[a-zA-Z_][a-zA-Z0-9_]*"
 syn match lntOption "^\s*[-+][a-zA-Z0-9_]\+"
-syn keyword lntKeyword echo
+syn keyword lntKeyword echo persistent
 syn keyword lntMetricTarget class function file project translation_unit
 
 " Highlight
